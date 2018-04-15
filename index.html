@@ -2,10 +2,25 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .canvas-container {
+      max-width: 600px;
+      height: 650px;
+      margin: 0 auto;
+    }
+     #canvas {
+       border: 2px solid #000;
+     }
+    </style>
   </head>
   <body>
     <div class="container">
-      <canvas id="canvas"></canvas>
+      <div class="controls">
+        <input type="file" id="image-input" />
+      </div>
+      <div class="canvas-container">
+        <canvas id="canvas" width="500" height="650"></canvas>
+      </div>
     </div>
   </body>
   <script src="/bundle.js"></script>
