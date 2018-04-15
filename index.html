@@ -3,11 +3,17 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-    .canvas-container {
-      max-width: 600px;
-      height: 650px;
-      margin: 0 auto;
-    }
+     .container {
+       display: flex;
+       justify-content: space-around;
+     }
+     .controls, .canvas-info {
+       width: 170px;
+     }
+     .canvas-container {
+       max-width: 600px;
+       height: 650px;
+     }
      #canvas {
        border: 2px solid #000;
      }
@@ -16,11 +22,19 @@
   <body>
     <div class="container">
       <div class="controls">
+        <p>
+          <ul>
+            <li>Choose a background image</li>
+            <li>Double click on cavas to add/delete a shape</li>
+            <li>Drag shape hadles to resize</li>
+          </ul>
+        </p>
         <input type="file" id="image-input" />
       </div>
       <div class="canvas-container">
         <canvas id="canvas" width="500" height="650"></canvas>
       </div>
+      <div class="canvas-info"></div>
     </div>
   </body>
   <script src="/bundle.js"></script>
