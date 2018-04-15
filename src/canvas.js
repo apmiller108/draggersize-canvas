@@ -1,7 +1,6 @@
 import _ from 'underscore';
 import CanvasShape from './canvas-shape';
 
-
 class Canvas {
   constructor(canvasElem) {
     this.backgroundImage       = new Image();
