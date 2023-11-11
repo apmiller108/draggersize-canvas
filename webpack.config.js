@@ -13,13 +13,22 @@ module.exports = {
         exclude: /node_modules/,
         test: /\.jsx?$/,
         loader: 'babel-loader',
-        query: {
-          presets: ['es2015']
+        options: {
+          presets: [
+            ['@babel/preset-env', { targets: "defaults" }]
+          ]
         }
       }
     ]
   },
   resolve: {
     extensions: ['.js', '.jsx']
+  },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, './'),
+    },
+    compress: false,
+    port: 8080,
   }
 };

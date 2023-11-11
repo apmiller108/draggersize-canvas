@@ -11,3 +11,12 @@
 - `yarn install`
 - `yarn start`
 - visit `localhost:8080` in your browser
+
+#### Don't have node?
+If you have docker installed, from the project directory run
+
+```shell
+docker run -it -p 8080:8080 -v "$PWD":/app node bash
+```
+
+...and follow the above instructions.
