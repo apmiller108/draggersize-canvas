@@ -1,5 +1,7 @@
 # Draggersize
 
+![Screenshot from 2023-11-11 16-03-52](https://github.com/apmiller108/draggersize-canvas/assets/14243155/82694091-528b-4bc0-87db-109a1dd7360a)
+
 ### What does it do?
 - It's an HTML canvas
 - Select an image from your device to use as a background
